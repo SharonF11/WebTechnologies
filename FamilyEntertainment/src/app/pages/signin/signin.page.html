@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+      <img alt="logo" height="45" src="./assets/images/FGHLogo.png">
+      <ion-buttons slot="start">
+        <ion-back-button text=""></ion-back-button>
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>What would you like to view today?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group>
+        <ion-item>
+          <ion-label>Soft Play</ion-label>
+          <ion-radio value="Customer"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Parties </ion-label>
+          <ion-radio value="Customer"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Risk Form</ion-label>
+          <ion-radio value="Customer"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>SignUp with your Customer Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">House Number</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Street Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Town</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">County</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Post Code </ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Country </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Phone Number </ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="tertiary"(click)="signup()">SignUp</ion-button>
+</ion-content>

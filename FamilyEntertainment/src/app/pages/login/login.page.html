@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+      <img alt="logo" height="45" src="./assets/images/FGHLogo.png">
+      <ion-buttons slot="start">
+        <ion-back-button text=""></ion-back-button>
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="tertiary">Welcome To Fun Galaxy</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-label color="tertiary" *ngIf="form.get('email').touched && form.get('email').errors?.required">Is this a correct email</ion-label>
+        <ion-label color="tertiary" *ngIf="form.get('email').touched && form.get('email').errors?.email">Incorrect Email</ion-label>
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-label color="tertiary" *ngIf="form.get('password').touched && form.get('Password').errors?.required">You must enter a password</ion-label>
+        <ion-button color="tertiary" fill="clear" size="full" [disabled]="!from.get('email').valid">Forgot Password</ion-button>
+        <ion-button color="danger" size="full" [disabled]="!from.valid" (click)="login()">Login</ion-button>
+        <ion-button color="tertiary" size="full"(click)="register()">SignUp</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </form>
+  </div>
+</ion-content>

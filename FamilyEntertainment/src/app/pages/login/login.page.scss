@@ -1,0 +1,18 @@
+.flex-center{
+    align-items: center;
+    display:flex;
+    height:100%;
+    justify-content: center; 
+    box-shadow: 2rem;
+}
+//this gives the colour and case of the button 
+ion-button[color="tertiary"]{
+    text-transform: initial;
+    
+}
+ion-content{
+    --background: var(--ion-color-tertiary-tint);
+}
+ion-card{
+    padding: 40px;
+}
